@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:service_id",
+ "creation": "2023-12-23 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_id",
+  "service_name",
+  "supplier",
+  "framework",
+  "lot",
+  "column_break_2",
+  "status",
+  "created_at",
+  "updated_at",
+  "section_break_details",
+  "service_summary",
+  "service_benefits",
+  "service_features",
+  "section_break_pricing",
+  "price_min",
+  "price_max",
+  "price_unit",
+  "price_interval",
+  "column_break_pricing",
+  "vat_included",
+  "trial_option",
+  "free_option",
+  "section_break_raw",
+  "raw_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_id",
+   "fieldtype": "Data",
+   "label": "Service ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "DM Supplier",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "framework",
+   "fieldtype": "Link",
+   "label": "Framework",
+   "options": "DM Framework"
+  },
+  {
+   "fieldname": "lot",
+   "fieldtype": "Link",
+   "label": "Lot",
+   "options": "DM Lot"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "published\nenabled\ndisabled\nremoved"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_details",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "service_summary",
+   "fieldtype": "Text Editor",
+   "label": "Service Summary"
+  },
+  {
+   "fieldname": "service_benefits",
+   "fieldtype": "Long Text",
+   "label": "Service Benefits"
+  },
+  {
+   "fieldname": "service_features",
+   "fieldtype": "Long Text",
+   "label": "Service Features"
+  },
+  {
+   "fieldname": "section_break_pricing",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "price_min",
+   "fieldtype": "Currency",
+   "label": "Price Min"
+  },
+  {
+   "fieldname": "price_max",
+   "fieldtype": "Currency",
+   "label": "Price Max"
+  },
+  {
+   "fieldname": "price_unit",
+   "fieldtype": "Data",
+   "label": "Price Unit"
+  },
+  {
+   "fieldname": "price_interval",
+   "fieldtype": "Data",
+   "label": "Price Interval"
+  },
+  {
+   "fieldname": "column_break_pricing",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_included",
+   "fieldtype": "Check",
+   "label": "VAT Included"
+  },
+  {
+   "fieldname": "trial_option",
+   "fieldtype": "Check",
+   "label": "Trial Option"
+  },
+  {
+   "fieldname": "free_option",
+   "fieldtype": "Check",
+   "label": "Free Option"
+  },
+  {
+   "fieldname": "section_break_raw",
+   "fieldtype": "Section Break",
+   "label": "Raw Data",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "raw_data",
+   "fieldtype": "Long Text",
+   "label": "Raw JSON Data",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-23 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "DM ERPNext Integration",
+ "name": "DM Service",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "service_name",
+ "track_changes": 1
+}

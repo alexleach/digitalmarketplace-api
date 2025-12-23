@@ -1,0 +1,285 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:brief_id",
+ "creation": "2023-12-23 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brief_id",
+  "title",
+  "status",
+  "framework",
+  "lot",
+  "column_break_2",
+  "organisation",
+  "location",
+  "is_a_copy",
+  "section_break_dates",
+  "created_at",
+  "updated_at",
+  "published_at",
+  "column_break_dates",
+  "applications_closed_at",
+  "clarification_questions_closed_at",
+  "withdrawn_at",
+  "section_break_details",
+  "summary_of_requirements",
+  "organisation_requirements",
+  "essential_requirements",
+  "nice_to_have_requirements",
+  "section_break_budget",
+  "budget_range",
+  "work_place",
+  "work_arrangement",
+  "column_break_budget",
+  "contract_length",
+  "security_clearance_required",
+  "section_break_technical",
+  "technical_competence_criteria",
+  "cultural_fit_criteria",
+  "evaluation_type",
+  "section_break_raw",
+  "raw_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "brief_id",
+   "fieldtype": "Data",
+   "label": "Brief ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "draft\nlive\nclosed\nwithdrawn\ncancelled\nunsuccessful\nawarded",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "framework",
+   "fieldtype": "Link",
+   "label": "Framework",
+   "options": "DM Framework",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "lot",
+   "fieldtype": "Link",
+   "label": "Lot",
+   "options": "DM Lot"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "organisation",
+   "fieldtype": "Data",
+   "label": "Organisation"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "is_a_copy",
+   "fieldtype": "Check",
+   "label": "Is a Copy"
+  },
+  {
+   "fieldname": "section_break_dates",
+   "fieldtype": "Section Break",
+   "label": "Dates"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "published_at",
+   "fieldtype": "Datetime",
+   "label": "Published At",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_dates",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applications_closed_at",
+   "fieldtype": "Datetime",
+   "label": "Applications Closed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clarification_questions_closed_at",
+   "fieldtype": "Datetime",
+   "label": "Clarification Questions Closed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "withdrawn_at",
+   "fieldtype": "Datetime",
+   "label": "Withdrawn At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_details",
+   "fieldtype": "Section Break",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "summary_of_requirements",
+   "fieldtype": "Text Editor",
+   "label": "Summary of Requirements"
+  },
+  {
+   "fieldname": "organisation_requirements",
+   "fieldtype": "Text Editor",
+   "label": "Organisation Requirements"
+  },
+  {
+   "fieldname": "essential_requirements",
+   "fieldtype": "Long Text",
+   "label": "Essential Requirements"
+  },
+  {
+   "fieldname": "nice_to_have_requirements",
+   "fieldtype": "Long Text",
+   "label": "Nice to Have Requirements"
+  },
+  {
+   "fieldname": "section_break_budget",
+   "fieldtype": "Section Break",
+   "label": "Budget & Contract"
+  },
+  {
+   "fieldname": "budget_range",
+   "fieldtype": "Data",
+   "label": "Budget Range"
+  },
+  {
+   "fieldname": "work_place",
+   "fieldtype": "Data",
+   "label": "Work Place"
+  },
+  {
+   "fieldname": "work_arrangement",
+   "fieldtype": "Data",
+   "label": "Work Arrangement"
+  },
+  {
+   "fieldname": "column_break_budget",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_length",
+   "fieldtype": "Data",
+   "label": "Contract Length"
+  },
+  {
+   "fieldname": "security_clearance_required",
+   "fieldtype": "Data",
+   "label": "Security Clearance Required"
+  },
+  {
+   "fieldname": "section_break_technical",
+   "fieldtype": "Section Break",
+   "label": "Evaluation Criteria"
+  },
+  {
+   "fieldname": "technical_competence_criteria",
+   "fieldtype": "Long Text",
+   "label": "Technical Competence Criteria"
+  },
+  {
+   "fieldname": "cultural_fit_criteria",
+   "fieldtype": "Long Text",
+   "label": "Cultural Fit Criteria"
+  },
+  {
+   "fieldname": "evaluation_type",
+   "fieldtype": "Data",
+   "label": "Evaluation Type"
+  },
+  {
+   "fieldname": "section_break_raw",
+   "fieldtype": "Section Break",
+   "label": "Raw Data",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "raw_data",
+   "fieldtype": "Long Text",
+   "label": "Raw JSON Data",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-23 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "DM ERPNext Integration",
+ "name": "DM Brief",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}

@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:slug",
+ "creation": "2023-12-23 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slug",
+  "name1",
+  "framework_family",
+  "status",
+  "column_break_2",
+  "framework_id",
+  "has_direct_award",
+  "has_further_competition",
+  "section_break_3",
+  "framework_agreement_version",
+  "variations",
+  "clarification_questions_open",
+  "allow_declaration_reuse"
+ ],
+ "fields": [
+  {
+   "fieldname": "slug",
+   "fieldtype": "Data",
+   "label": "Slug",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "framework_family",
+   "fieldtype": "Select",
+   "label": "Framework Family",
+   "options": "g-cloud\ndigital-outcomes-and-specialists",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "coming\nopen\npending\nstandstill\nlive\nexpired",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "framework_id",
+   "fieldtype": "Int",
+   "label": "Framework ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "has_direct_award",
+   "fieldtype": "Check",
+   "label": "Has Direct Award"
+  },
+  {
+   "fieldname": "has_further_competition",
+   "fieldtype": "Check",
+   "label": "Has Further Competition"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "framework_agreement_version",
+   "fieldtype": "Data",
+   "label": "Framework Agreement Version"
+  },
+  {
+   "fieldname": "variations",
+   "fieldtype": "Long Text",
+   "label": "Variations"
+  },
+  {
+   "fieldname": "clarification_questions_open",
+   "fieldtype": "Check",
+   "label": "Clarification Questions Open"
+  },
+  {
+   "fieldname": "allow_declaration_reuse",
+   "fieldtype": "Check",
+   "label": "Allow Declaration Reuse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-23 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "DM ERPNext Integration",
+ "name": "DM Framework",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
