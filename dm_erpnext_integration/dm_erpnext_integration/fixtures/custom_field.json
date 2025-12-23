@@ -1,0 +1,11 @@
+[
+    {
+        "doctype": "Custom Field",
+        "dt": "Supplier",
+        "fieldname": "dm_supplier_id",
+        "fieldtype": "Link",
+        "label": "DM Supplier",
+        "options": "DM Supplier",
+        "insert_after": "supplier_name"
+    }
+]
